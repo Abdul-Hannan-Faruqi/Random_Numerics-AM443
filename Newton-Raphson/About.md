@@ -6,7 +6,7 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
 * Use *X(1), X(2),...* etc. for the varaibles in the equation.
 * Example:
 
-    x = Newton_Raphson(2) %to find the solution of a system of 2 equations
+      x = Newton_Raphson(2) %to find the solution of a system of 2 equations
     >To be specified in the function Fx
     >
     >> F(1) = 12* X(2)+sin(X(1))-1;
