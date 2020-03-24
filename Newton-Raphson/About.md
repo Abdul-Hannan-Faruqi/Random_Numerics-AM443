@@ -7,7 +7,7 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
 * Example:
 
       x = Newton_Raphson(2) %to find the solution of a system of 2 equations
-    >To be specified in the function Fx
+    >To be specified in the function *Fx*
     >
     >> F(1) = 12* X(2)+sin(X(1))-1;
     >
@@ -20,6 +20,6 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
 * Example:
 
       x = NR (1)  % starts the iteration with x = 1
-     > To be specified in the function f
+     > To be specified in the function *f*
      >
      >> y = log(x) - 1 
