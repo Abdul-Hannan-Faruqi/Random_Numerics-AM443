@@ -8,8 +8,8 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
     x = Newton_Raphson(2) %to find the solution of a system of 2 equations
     >To be specified in the function Fx
     >
-    > F(1) = 12* X(2)+sin(X(1))-1;
-    > F(2) = 8* X(1)-log(X(2))+3;
+    >> F(1) = 12* X(2)+sin(X(1))-1;
+    >> F(2) = 8* X(1)-log(X(2))+3;
 
 ## 2. NR
 * The function finds the solution of a single equation using Newton-Raphson method.
