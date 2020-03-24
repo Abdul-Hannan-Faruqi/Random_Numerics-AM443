@@ -15,4 +15,11 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
 
 ## 2. NR
 * The function finds the solution of a single equation using Newton-Raphson method.
-* It takes the initial value of the variable (x) as input.
+* It takes the initial value (xst) of the variable (x) as input.
+* The equation to be solved should be specified in the function **f**
+* Example:
+
+      x = NR (1)  % starts the iteration with x = 1
+     > To be specified in the function f
+     >
+     >> y = log(x) - 1 
