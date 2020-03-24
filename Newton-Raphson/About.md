@@ -9,6 +9,7 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
     >To be specified in the function Fx
     >
     >> F(1) = 12* X(2)+sin(X(1))-1;
+    >
     >> F(2) = 8* X(1)-log(X(2))+3;
 
 ## 2. NR
