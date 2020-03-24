@@ -1,7 +1,7 @@
 This is a MATLAB implementation of the generalized Newton-Raphson algorithm for solving a system of non-linear equations.
 
 # Usage
-## 1. Newton_Raphson (X)
+## 1. Newton_Raphson (n)
 * The function takes in an integer (**n**) for the number of equations (or variables) and the corresponding equations need to be specified in the '**Fx**' function.
 * Use *X(1), X(2),...* etc. for the varaibles in the equation.
 * Example:
