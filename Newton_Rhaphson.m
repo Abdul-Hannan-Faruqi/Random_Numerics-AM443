@@ -44,7 +44,6 @@ function [F] = Fx(X)
 %   Detailed explanation goes here
 %F(1) = enter first function;
 %F(2) = enter second function;
-F(1) = X(2)-sin(X(1));
-F(2) = X(2)^3+3*X(2)^2-X(1);
-%F(3) = 12*X(3)+sin(X(3))-1;
+%Example:
+%F(1) = 12*X(2)+sin(X(1))-1;
 end
