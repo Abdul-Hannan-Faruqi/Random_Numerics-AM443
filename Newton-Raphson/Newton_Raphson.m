@@ -40,10 +40,11 @@ hold off
 end
 
 function [F] = Fx(X)
-%Fx Calculates the output of functions F(i) for given X
-%   Detailed explanation goes here
+%Fx Calculates the output of functions F(i) for the given vector X
+%   Evaluates the equations that need to be specified as in the example
 %F(1) = enter first function;
 %F(2) = enter second function;
-%Example:
+%Example: for n = 2
 %F(1) = 12*X(2)+sin(X(1))-1;
+%F(2) = 8*X(1)-log(X(2))+3;
 end
