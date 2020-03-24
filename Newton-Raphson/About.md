@@ -4,7 +4,8 @@ This is a MATLAB implementation of the generalized Newton-Raphson algorithm for 
 ## 1. Newton_Raphson
 * The function takes in an integer (**n**) for the number of equations (or variables) and the corresponding equations need to be specified in the '**Fx**' function.
 * Use *X(1), X(2),...* etc. for the varaibles in the equation.
-* Example
+* Example:
+
     x = Newton_Raphson(2) %to find the solution of a system of 2 equations
     >To be specified in the function Fx
     >
