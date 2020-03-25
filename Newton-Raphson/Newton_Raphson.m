@@ -1,16 +1,21 @@
-function [ x ] = Newton_Rhaphson( n )
+function [ x ] = Newton_Rhaphson( n, varargin )
 %Newton_Rhaphson Solver based on Newton-Rhaphson method for 'n' equations
 %   Calculates the solution of the system of non-linear equations given in Fx
+p = inputParser;
+defaultx = zeros(n,1);     %Initialize solution with zeros
 
-x = zeros(n,1);     %Initialize solution with zeros
-x = [-0.1;-0.1];
+addRequired(p,'n',@isnumeric);              %Required argument
+addOptional(p,'x',defaultx, @isnumeric);    %Optional argument
+parse(p, n, varargin{:})                    %Parsing the inputs
+x = p.Results.x;
+
 pb = zeros(1,n);    %array of function values at backward neighbour 
 p = zeros(n,1);     %array of function values at the current x
 pf = zeros(1,n);    %array of function values at forward neighbour
 a = zeros(n,n);     %transpose of Jacobian matrix
 h=0.001;            %difference used for central differencing
 e = 1e-8;           %Error tolerance
-err = 1;
+err = 1;            %Error Initialization
 pl = transpose(x);
 iter = 1;
 while err > e
@@ -36,6 +41,8 @@ for i = 1:n
     plot(plx, ply);
     hold on
 end
+xlabel('Iteration');
+ylabel('X');
 hold off
 end
 
