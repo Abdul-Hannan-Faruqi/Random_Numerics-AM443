@@ -52,6 +52,6 @@ function [F] = Fx(X)
 %   F(1) = enter first function;
 %   F(2) = enter second function;
 %Example: for n = 2
-   F(1) = 12*X(2)+sin(X(1))-1;
-   F(2) = 8*X(1)-log(X(2))+3;
+%   F(1) = 12*X(2)+sin(X(1))-1;
+%   F(2) = 8*X(1)-log(X(2))+3;
 end
