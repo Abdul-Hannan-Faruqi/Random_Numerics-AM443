@@ -2,7 +2,7 @@ function [ x ] = Newton_Rhaphson( n, varargin )
 %Newton_Rhaphson Solver based on Newton-Rhaphson method for 'n' equations
 %   Calculates the solution of the system of non-linear equations given in Fx
 p = inputParser;
-defaultx = zeros(n,1);     %Initialize solution with zeros
+defaultx = ones(n,1);     %Initialize solution with zeros
 
 addRequired(p,'n',@isnumeric);              %Required argument
 addOptional(p,'x',defaultx, @isnumeric);    %Optional argument
@@ -52,6 +52,6 @@ function [F] = Fx(X)
 %   F(1) = enter first function;
 %   F(2) = enter second function;
 %Example: for n = 2
-%   F(1) = 12*X(2)+sin(X(1))-1;
-%   F(2) = 8*X(1)-log(X(2))+3;
+   F(1) = 12*X(2)+sin(X(1))-1;
+   F(2) = 8*X(1)-log(X(2))+3;
 end
