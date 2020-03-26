@@ -1,5 +1,5 @@
-function [ x ] = Newton_Rhaphson( n, varargin )
-%Newton_Rhaphson Solver based on Newton-Rhaphson method for 'n' equations
+function [ x ] = Newton_Raphson( n, varargin )
+%Newton_Raphson Solver based on Newton-Raphson method for 'n' equations
 %   Calculates the solution of the system of non-linear equations given in Fx
 p = inputParser;
 defaultx = ones(n,1);     %Initialize solution with zeros
